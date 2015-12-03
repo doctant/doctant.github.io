@@ -7,7 +7,7 @@
   <script src="//use.typekit.net/cyn2ygk.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body style="background: #FFF;">
+<body style="background: #FFF; overflow-y: hidden !important;">
   <div id="phead" class="ph-header hidden">
     <div class="ph-container">
       <img class="inline mobile-ph mobile-ph-wh" src="./images/kitty.png"/>
@@ -26,10 +26,10 @@
               <h5 class="logo inline logo-mobile">doctant</h5>
             </a>
             <ul class="inline menu m-hidden">
-              <li class="inline"><a href="#">Example Documentation</a></li>
+              <li class="inline"><a target="_blank" href="https://read.doctant.com/doctant/How%20To%20Write%20Go%20Code">Example Documentation</a></li>
             </ul>
             <div class="u-pull-right">
-              <a href="https://app.doctant.com/account/signin" class="button-white sign-in" style="padding: 5px 15px; position:relative; top: 17px; text-decoration: none;">
+              <a href="https://app.doctant.com/account/login" class="button-white sign-in" style="padding: 5px 15px; position:relative; top: 17px; text-decoration: none;">
                 Sign in
               </a>
             </div>
@@ -39,106 +39,7 @@
     </div>
   </div>
 
-  <div class="super-hero">
-    <div class="container">
-      <div class="row">
-        <div id="hero">
-          <h2 class="hero-big-text">
-            Create knowledge.
-          </h2>
-          <p class="hero-small-text">
-            Doctant simplifies the way you share documentation with your community.
-          </p>
-        </div>
-
-        <a href="https://app.doctant.com/signup" class="button-boom">
-          Get Started Free
-        </a>
-
-        <div class="fake-browser-ui">
-          <div class="frame">
-            <span class="y-red"></span>
-            <span class="y-yellow"></span>
-            <span class="y-green"></span>
-          </div>
-
-          <img class="image editor-gif" src="./images/editor-demo.gif">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section write-share">
-    <div class="section-inner">
-      <div class="container">
-        <div class="row">
-          <div class="six columns">
-            <h4>
-              Just write.
-            </h4>
-            <p class="write-share-copy">
-              Write your documentation efficiently in an editor that you already know how to use.
-            </p>
-          </div>
-          <div class="six columns">
-            <h4>
-              Share, or don't.
-            </h4>
-            <p class="write-share-copy">
-              Publish your documentation publicly or privately to a unique URL provided by <u>doctant</u>, or point your domain to it.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="pricing read-div">
-    <div class="container">
-      <div class="row center-text">
-        <h2 class="hero-big-text">
-          Read everywhere.
-        </h2>
-
-        <p class="hero-small-text">
-          One click to publish beautiful, responsive sites for your documentation.
-        </p>
-
-        <a href="https://app.doctant.com/signup" class="button-gray">
-          Read Example Doc
-        </a>
-      </div>
-      <div class="row mobile-demo">
-        <div class="five columns">
-          <div id='phone'>
-            <div id='screen'>
-              <img src="./images/mobile.png">
-            </div>
-          </div>
-        </div>
-        <div class="seven columns">
-
-          <p class="pad-top">
-            Don't limit where and how your audience consumes documentation. Optimized for screens of all sizes, documentation made with <u>doctant</u> is responsive and loads lightning fast.
-          </p>
-          <p>
-            <a href="https://app.doctant.com/signup" id="get-started-mo" class="button-boom" style="color: #FEFEFE;">Get Started Free</a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="fake-browser-ui div-read-ss">
-          <div class="frame">
-            <span class="y-red"></span>
-            <span class="y-yellow"></span>
-            <span class="y-green"></span>
-          </div>
-
-          <img class="image read-ss" src="./images/read.png">
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ yield }}
 
   <footer class="m-footer">
     <div class="container max-w-1100">
@@ -150,16 +51,14 @@
 
           <ul class="inline menu m-hidden">
             <li class="inline"><a href="mailto:info@doctant.com">Contact</a></li>
-            <li class="inline"><a href="mailto:info@doctant.com">Terms of Service</a></li>
+            <li class="inline"><a href="/terms">Terms of Service</a></li>
           </ul>
-          <a href="https://app.doctant.com/signup" class="button-footer">Get Started Free</a>
+          <a href="https://app.doctant.com/account/signup" class="button-footer">Get Started Free</a>
         </div>
       </div>
     </div>
   </footer>
   </div>
-
-  {{ yield }}
 
   <script>
     window.onload = function() {
